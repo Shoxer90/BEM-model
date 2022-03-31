@@ -25,11 +25,25 @@
                         <a href="" class="menu__item">Testimonials</a>
                         <a href="" class="menu__item">Start a project</a>
                         <div class="button__div">
-                            <button class="button" >
+                            <button class="button header-button" >
                                 GET STARTED
                             </button>
                         </div>
                     </div>
+                    <!-- burger -->
+                    <div class="burger-menu">
+                        <button class="button" onclick="myFunction()">Menu  </button>
+                        <div id="myLinks">
+                            <div class="burger-menu__item ">Home</div>
+                            <div class="burger-menu__item " >Your benefits</div>
+                            <div class="burger-menu__item ">Our process</div>
+                            <div class="burger-menu__item " >Our works</div>
+                            <div class="burger-menu__item ">Testimonials</div>
+                            <div class="burger-menu__item " >Start a project</div>
+                        </div>
+                    </div>
+              
+                    <!-- over -->
             </header>
             <div class="title-group">
                 <h1>A Digital Product Design Agency</h1>
@@ -110,15 +124,15 @@
                     <div class="table">
                         <div class="table__item">
                             <div class="table__image light-bluemarine">
-                                <img  class="item__img" src="./images/Bag2.png" alt="blockImg">
+                                <img  class="item__img" src="./images/FolderProc.png" alt="blockImg">
                             </div>
                             <div class="table__text">
                                 <h3>Data tracking</h3>
                                 <span>The hardware and software, which when used together allows you to know where something is at any point in time</span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                 </div>
+            </div>
         </div>
     </div>
     <div class="process">
@@ -154,7 +168,7 @@
                     </div>
                     <div class="table__item">
                         <div class="table__image light-purple">
-                            <img  class="item__img" src="./images/FolderProcess.png" alt="blockImg">
+                            <img  class="item__img" src="./images/FolderProc.png" alt="blockImg">
                         </div>
                         <div class="table__text">
                             <h3>Data tracking</h3>
@@ -216,13 +230,14 @@
                 </div>
             </div>
         </div>
+
         <footer class="footer"> 
             <div class="footer__body">
-                <block class="header">
+                <block class="footer__start">
                     <div class="menu__logo">
                       <img src="./images/comp_logo.png"  alt="company" />
                     </div>
-                    <div class="menu">
+                    <div class="menu footer__menu">
                         <a href="" class="menu__item">Home</a>
                         <a href="" class="menu__item">Your benefits</a>
                         <a href="" class="menu__item">Our process</a>
@@ -238,10 +253,8 @@
                         <hr>
                     </block>
                <div class="footer__end">
-                   <div class="ltd">
-                </div>
-                <div class="footer__privacy">
-                        <img src="./images/footer.png" alt="">
+                   <img src="./images/footer.png" alt="">
+                    <div class="footer__privacy">
                         <a href="" class="privacy">Privacy policy</a>
                         <a href="" class="privacy">Term of service</a>
                     </div>
@@ -249,5 +262,16 @@
             </div>
         </footer>   
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "grid") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "grid";
+          }
+        }
+    </script>
+
 </body>
 </html>
