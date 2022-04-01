@@ -32,7 +32,7 @@
                     </div>
                     <!-- burger -->
                     <div class="burger-menu">
-                        <button class="button" onclick="myFunction()">Menu  </button>
+                        <button class="button " onclick="myFunction()">Menu  </button>
                         <div id="myLinks">
                             <div class="burger-menu__item ">Home</div>
                             <div class="burger-menu__item " >Your benefits</div>
@@ -59,12 +59,12 @@
                 <img src="./images/intro_img.png" alt="intro" class="intro__img">
         </div>
         <div class="services">
-            <div class="service__content">
-                <div class="services__title ">
-                   <h2>
-                       We are here to help you with
-                   </h2>
-                </div>
+            <div class="services__title ">
+               <h2>
+                   We are here to help you with
+               </h2>
+            </div>
+            <div class="service__content ">
                 <div class="services__table">  
                     <div class="table">
                         <div class="table__item">
@@ -124,7 +124,7 @@
                     <div class="table">
                         <div class="table__item">
                             <div class="table__image light-bluemarine">
-                                <img  class="item__img" src="./images/FolderProc.png" alt="blockImg">
+                                <img  class="item__img" src="./images/Folder.png" alt="blockImg">
                             </div>
                             <div class="table__text">
                                 <h3>Data tracking</h3>
@@ -137,20 +137,20 @@
     </div>
     <div class="process">
         <block class="process__title title">
-            <span>HOW IT WORKS</span>
             <div class="title-group">
+                <p>HOW IT WORKS</p>
                 <h1>Our Process</h1>
                 <div class="subtitle">
                         <span>We know the best solution for all of your business ideas and we can help you solve all business problems</span>
                 </div>
             </div>
         </block>
-        <div class="process__block">
-            <div class="process__item">
+        <div class="process__block ">
+            <div class="process__item centered">
                 <div class="process__img">
-                        <img src="./images/proces3.png" class="proc2" alt="12">
-                        <img src="./images/proces1.png" class="proc1" alt="12">
-                        <img src="./images/proces2.png" class="proc3" alt="12">
+                    <img src="./images/proces3.png" class="proc2" alt="12">
+                    <img src="./images/proces1.png" class="proc1" alt="12">
+                    <img src="./images/proces2.png" class="proc3" alt="12">
                 </div>
                     <div class="table__item">
                         <div class="table__image light-bluemarine">
@@ -162,13 +162,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="process__item">
+                <div class="process__item centered">
                     <div class="process__img">
                         <img src="./images/howItWorks2.png"  alt="12">
                     </div>
                     <div class="table__item">
                         <div class="table__image light-purple">
-                            <img  class="item__img" src="./images/FolderProc.png" alt="blockImg">
+                            <img  class="item__img" src="./images/Folder.png" alt="blockImg">
                         </div>
                         <div class="table__text">
                             <h3>Data tracking</h3>
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="process__item">
+                <div class="process__item centered">
                     <div class="process__img">
                         <img src="./images/howItWork3.png"  alt="12">
                     </div>
@@ -226,16 +226,15 @@
                             </button>
                         </div>
                     </div>
-                        <img src="./images/offerImage.png" alt="offerImage"class="offer__image">
+                    <img src="./images/offerImage.png" alt="offerImage"class="offer__image">
                 </div>
             </div>
         </div>
-
         <footer class="footer"> 
-            <div class="footer__body">
+            <div class="footer__body centered">
                 <block class="footer__start">
                     <div class="menu__logo">
-                      <img src="./images/comp_logo.png"  alt="company" />
+                      <img src="./images/comp_logo.png" class="logo-img" alt="company" />
                     </div>
                     <div class="menu footer__menu">
                         <a href="" class="menu__item">Home</a>
@@ -248,12 +247,14 @@
                             <img src="./images/Facebook.png" alt="facebook" class="social-network__item">
                             <img src="./images/Instagram.png" alt="instagram" class="social-network__item">
                             <img src="./images/Twitter.png" alt="twitter" class="social-network__item">
-                            </block>
-                        </div>
-                        <hr>
-                    </block>
-               <div class="footer__end">
-                   <img src="./images/footer.png" alt="">
+                        </block>
+                    </div>
+                </block>
+                <hr style="width:100%; margin: auto;">
+                <div class="footer__end">
+                   <div class="privacy-img">
+                       <img src="./images/footer.png"  class="privacy-img" alt="">
+                   </div>
                     <div class="footer__privacy">
                         <a href="" class="privacy">Privacy policy</a>
                         <a href="" class="privacy">Term of service</a>
@@ -264,7 +265,7 @@
     </div>
     <script>
         function myFunction() {
-          var x = document.getElementById("myLinks");
+          let x = document.getElementById("myLinks");
           if (x.style.display === "grid") {
             x.style.display = "none";
           } else {
@@ -272,6 +273,5 @@
           }
         }
     </script>
-
 </body>
 </html>
