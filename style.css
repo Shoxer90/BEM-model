@@ -303,7 +303,6 @@
     }
     .table{
         justify-items: center;
-
         justify-content:space-around;
         display: flex;
     }
@@ -312,7 +311,6 @@
         justify-items: center;
     }
 }
-
 @media(max-width:1022px){
     .services__table{
         padding: 16px;
@@ -364,7 +362,6 @@
         height: auto;
      }
 }
-
 @media(max-width:620px){
     .footer__menu{
         margin-bottom: 10px;
@@ -405,7 +402,6 @@
         text-align: center;
     }
 }
-
 /* colors */
 .light-pink{
     background-color: #FFE7DB;
