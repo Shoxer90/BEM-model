@@ -14,35 +14,20 @@
     <body>
         <div class="container">
             <div class="intro">
-                <header class="header">
-                    <div class="menu__logo">
-                        <img  class="logo" src="./images/comp_logo.png" alt="company" />
-                    </div>
-                    <div class="menu header__menu">
+                <div class="header">
+                    <img  class="logo" src="./images/comp_logo.png" alt="company" />
+                    <div class="menu">
                         <a href="#" class="menu__item"> Home </a>
                         <a href="#" class="menu__item"> Your benefits </a>
                         <a href="#" class="menu__item"> Our process </a>
                         <a href="#" class="menu__item"> Our works </a>
                         <a href="#" class="menu__item"> Testimonials </a>
                         <a href="#" class="menu__item"> Start a project </a>
-                        <div class="button__div">
-                            <button class="button header-button" >
-                                GET STARTED
-                            </button>
-                        </div>
                     </div>
-                    <div class="burger-menu">
-                        <button class="button" onclick="myFunction()"> Menu  </button>
-                        <div id="myLinks" class="links">
-                            <div class="burger-menu__item"> Home </div>
-                            <div class="burger-menu__item"> Your benefits </div>
-                            <div class="burger-menu__item"> Our process </div>
-                            <div class="burger-menu__item"> Our works </div>
-                            <div class="burger-menu__item"> Testimonials </div>
-                            <div class="burger-menu__item"> Start a project </div>
-                        </div>
-                    </div>
-                </header>
+                    <button class="button button--intro header-button" >
+                        GET STARTED
+                    </button>
+                </div>
                 <div class="title-group">
                     <h1 class="hight-level__title"> A Digital Product Design Agency </h1>
                     <div class="subtitle">
@@ -142,7 +127,7 @@
                             </div>
                             <div class="table">
                                 <div class="table__item">
-                                    <div class="table__image light-bluemarine">
+                                    <div class="table__image table__image--light-bluemarine">
                                         <img  class="item__img" src="./images/Folder.png" alt="blockImg">
                                     </div>
                                     <div class="table__text">
@@ -174,11 +159,12 @@
             <div class="process__body ">
                 <div class="process__block">
                     <div class="process__item ">
-                        <div class="process__img">
+                        <!-- <div class="process__img">
                                 <img src="./images/proces3.png" class="image-collection__item2" alt="12">
                                 <img src="./images/proces1.png" class="image-collection__item1" alt="12">
                                 <img src="./images/proces2.png" class="image-collection__item3" alt="12">
-                        </div>
+                        </div> -->
+                        <img class="process__img" src="./images/audit.png" alt="blockImg">
                         <div class="table__item">
                             <div class="table__image light-bluemarine">
                                 <img class="item__img" src="./images/SearchProcess.png" alt="blockImg">
@@ -257,36 +243,30 @@
             <footer class="footer "> 
                 <div class="footer__body ">
                     <div class="body__content">
-                            <div class="footer__start">
-                                <div class="menu__logo">
-                                      <img src="./images/comp_logo.png" class="logo-img" alt="company" />
-                                </div>
-                                <div class="menu footer__menu">
-                                    <a href="#" class="menu__item"> Home </a>
-                                    <a href="#" class="menu__item"> Your benefits </a>
-                                    <a href="#" class="menu__item"> Our process </a>
-                                    <a href="#" class="menu__item"> Our works </a>
-                                    <a href="#" class="menu__item"> Testimonials </a>
-                                    <a href="#" class="menu__item"> Start a project </a>
-                                    <block class="social-network">
-                                        <img src="./images/Facebook.png" alt="facebook" class="social-network__item">
-                                        <img src="./images/Instagram.png" alt="instagram" class="social-network__item">
-                                        <img src="./images/Twitter.png" alt="twitter" class="social-network__item">
-                                    </block>
-                                </div>
+                        <div class="footer__start">
+                            <img src="./images/comp_logo.png" class="logo footer-logo" alt="company" />
+                            <div class="menu footer__menu">
+                                <a href="#" class="menu__item"> Home </a>
+                                <a href="#" class="menu__item"> Your benefits </a>
+                                <a href="#" class="menu__item"> Our process </a>
+                                <a href="#" class="menu__item"> Our works </a>
+                                <a href="#" class="menu__item"> Testimonials </a>
+                                <a href="#" class="menu__item"> Start a project </a>
                             </div>
-                            <hr>
-                            <div class="footer__end">
-                            <div class="privacy-img">
-                                <img src="./images/footer.png"  class="privacy-img" alt="privacyImg">
-                            </div>
-                                <div class="footer__privacy">
-                                    <a href="#" class="privacy"> Privacy policy </a>
-                                    <a href="#" class="privacy"> Term of service </a>
-                                </div>
-                            </div>
+                            <block class="social-network">
+                                <img src="./images/Facebook.png" alt="facebook" class="social-network__item">
+                                <img src="./images/Instagram.png" alt="instagram" class="social-network__item">
+                                <img src="./images/Twitter.png" alt="twitter" class="social-network__item">
+                            </block>
+                        </div>
+                        <hr>
+                        <div class="footer__end">
+                            <img src="./images/2019company.png"  class="privacy__img" alt="privacyImg">
+                            <a href="#" class="privacy"> Privacy policy </a>
+                            <a href="#" class="privacy"> Term of service </a>
                         </div>
                     </div>
+                </div>
             </footer>   
         </div>
     </body>
