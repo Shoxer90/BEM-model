@@ -49,10 +49,17 @@ $small: 480px;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 20px 0;
+    padding: 10px 20px;
     @media(max-width: $mobile) {
         display: block;
-
+    }
+    .logo{
+        @media screen and (max-width:$desktop) {
+            @include logoTrfm(20%,0px);
+        }
+        @media screen and (max-width:$mobile) {
+            @include logoTrfm(30%,0px);
+        }
     }
     .menu {
         display: block;
@@ -64,8 +71,8 @@ $small: 480px;
         &__item {
             color: white;
             text-decoration: none;
-            padding: 10px 10px;
-            font-size: large;
+            padding: 5px;
+            font-size: medium;
             @media(max-width: 1024px) {
                 font-size: small;
                 padding: 10px 25px;
@@ -125,7 +132,7 @@ $small: 480px;
     &__table{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
+        // gap: 50px;
         @media screen and (max-width:950px){
             grid-template-columns:1fr 1fr;
         }
