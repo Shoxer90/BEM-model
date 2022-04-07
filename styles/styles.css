@@ -29,12 +29,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 0 20px 0;
+  padding: 10px 20px;
 }
 
 @media (max-width: 768px) {
   .header {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header .logo {
+    width: 20%;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo {
+    width: 30%;
+    margin: 0px;
   }
 }
 
@@ -55,8 +69,8 @@
 .header .menu__item {
   color: white;
   text-decoration: none;
-  padding: 10px 10px;
-  font-size: large;
+  padding: 5px;
+  font-size: medium;
 }
 
 @media (max-width: 1024px) {
@@ -131,7 +145,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
 }
 
 @media screen and (max-width: 950px) {
